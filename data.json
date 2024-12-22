@@ -1,0 +1,18 @@
+{
+    "user": {
+        "password": "password",
+        "passwords": {
+            "google": "abc123XYZ!",
+            "facebook": "4PBcT#%/PB",
+            "instagram": "'.{Itgz^\"OdVXtV"
+        }
+    },
+    "user1": {
+        "password": "pass",
+        "passwords": {}
+    },
+    "userr": {
+        "password": "pass",
+        "passwords": {}
+    }
+}
