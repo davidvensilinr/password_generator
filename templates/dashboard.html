@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}</h1>
+        <form method="POST">
+            <input type="text" name="domain" placeholder="Domain" required>
+            <input type="number" name="char_length" placeholder="Password Length" min="4" required>
+            <button type="submit">Generate Password</button>
+        </form>
+        <h2>Your Saved Passwords</h2>
+        <ul>
+            {% for domain, password in passwords.items() %}
+                <li><strong>{{ domain }}</strong>: {{ password }}</li>
+            {% endfor %}
+        </ul>
+        <a class="logout-btn" href="/logout">Logout</a>
+    </div>
+</body>
+</html>
